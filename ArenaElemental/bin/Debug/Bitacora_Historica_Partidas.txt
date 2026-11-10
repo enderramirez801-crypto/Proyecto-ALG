@@ -1,0 +1,4 @@
+﻿[2026-11-08 13:29:16] aAAA vs DDD | Ganador: DDD | Arena: Estadio Cascada | Rondas: 4 | Terremotos: 1
+[2026-11-10 09:31:23] aAAA vs DDD | Ganador: DDD | Arena: Volcan Cinnabar | Rondas: 19 | Terremotos: 6
+[2026-11-10 10:28:59] Pablo vs Sistema (CPU) | Ganador: Pablo | Arena: Estadio Cascada | Rondas: 36 | Terremotos: 11
+[2026-11-10 15:41:12] aAAA vs DDD | Ganador: DDD | Arena: Estadio Cascada | Rondas: 19 | Terremotos: 6

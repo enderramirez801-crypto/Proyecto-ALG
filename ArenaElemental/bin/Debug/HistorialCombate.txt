@@ -1,0 +1,84 @@
+﻿======================================================================
+BITÁCORA OFICIAL DE COMBATE POST-BATALLA - ARENA ELEMENTAL
+======================================================================
+Fecha y Hora        : 2026-11-10 15:41:12
+Jugador 1           : aAAA
+Jugador 2           : DDD
+Ganador de la Arena : DDD
+Escenario / Arena   : Estadio Cascada
+Total de Rondas     : 19
+Terremotos Ocurridos: 6
+======================================================================
+REGISTRO SECUENCIAL TURNO POR TURNO (PILA / LIFO EXTRAÍDA CON POP):
+======================================================================
+=== INICIO DEL COMBATE EN ARENA ELEMENTAL ===
+Arena activa: Estadio Cascada (+Agua / -Fuego)
+Sorteo aleatorio: Inicia el combate aAAA con 2 de Energía.
+[Ronda 1] aAAA finaliza su turno de acción.
+[Ronda 2] DDD finaliza su turno de acción.
+[Ronda 3 - aAAA] Vaporeon (Agua) lanza un torrente presurizado contra Blastoise! Causa 37 pts [Mitigado por escudo: 30, Daño neto a vida: 7]. Blastoise (HP: 43/50, DEF: 0)
+[Ronda 3 - aAAA] Vaporeon (Agua) lanza un torrente presurizado contra Blastoise! Causa 37 pts [Mitigado por escudo: 0, Daño neto a vida: 37]. Blastoise (HP: 6/50, DEF: 0)
+[Ronda 3] aAAA finaliza su turno de acción.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Vaporeon (Empatía 70)! Sufre daño sísmico: -12 DEF (ruptura de escudo) y -5 HP (daño porcentual).
+¡Terremoto en Blastoise (Empatía efectiva 78)! ¡Efecto invertido! Se regenera +9 HP y refuerza coraza +8 DEF.
+[Ronda 4] DDD finaliza su turno de acción.
+[Ronda 5] aAAA finaliza su turno de acción.
+[Ronda 6 - DDD] Blastoise (Agua) lanza un torrente presurizado contra Vaporeon! Causa 25 pts [Mitigado por escudo: 18, Daño neto a vida: 7]. Vaporeon (HP: 33/45, DEF: 0)
+[Ronda 6 - DDD] Blastoise (Agua) lanza un torrente presurizado contra Vaporeon! Causa 25 pts [Mitigado por escudo: 0, Daño neto a vida: 25]. Vaporeon (HP: 8/45, DEF: 0)
+[Ronda 6] Tiempo agotado para DDD. Se cede el turno por inactividad.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Vaporeon (Empatía 70)! Sufre daño sísmico: -0 DEF (ruptura de escudo) y -5 HP (daño porcentual).
+¡Terremoto en Blastoise (Empatía efectiva 78)! ¡Efecto invertido! Se regenera +9 HP y refuerza coraza +8 DEF.
+[Ronda 7 - aAAA] Vaporeon (Agua) lanza un torrente presurizado contra Blastoise! Causa 37 pts [Mitigado por escudo: 16, Daño neto a vida: 21]. Blastoise (HP: 3/50, DEF: 0)
+[Ronda 7 - aAAA] Vaporeon (Agua) lanza un torrente presurizado contra Blastoise! Causa 37 pts [Mitigado por escudo: 0, Daño neto a vida: 37]. Blastoise (HP: 0/50, DEF: 0)
+¡Blastoise cayó debilitado! Entra Arcanine desde la Cola de Relevos.
+[Ronda 7 - aAAA] Vaporeon (Agua) lanza un torrente presurizado contra Arcanine! Causa 52 pts [Mitigado por escudo: 20, Daño neto a vida: 32]. Arcanine (HP: 13/45, DEF: 0)
+[Ronda 7] aAAA finaliza su turno de acción.
+[Ronda 8 - DDD] Arcanine (Fuego) desata una llamarada abrasadora sobre Vaporeon! Causa 42 pts [Mitigado por escudo: 0, Daño neto a vida: 42]. Vaporeon (HP: 0/45, DEF: 0)
+¡Vaporeon cayó debilitado! Entra Arcanine desde la Cola de Relevos.
+[Ronda 8 - DDD] Arcanine (Fuego) desata una llamarada abrasadora sobre Arcanine! Causa 52 pts [Mitigado por escudo: 20, Daño neto a vida: 32]. Arcanine (HP: 13/45, DEF: 0)
+[Ronda 8 - DDD] Arcanine (Fuego) desata una llamarada abrasadora sobre Arcanine! Causa 52 pts [Mitigado por escudo: 0, Daño neto a vida: 52]. Arcanine (HP: 0/45, DEF: 0)
+¡Arcanine cayó debilitado! Entra Moltres desde la Cola de Relevos.
+[Ronda 8 - DDD] Arcanine (Fuego) desata una llamarada abrasadora sobre Moltres! Causa 52 pts [Mitigado por escudo: 20, Daño neto a vida: 32]. Moltres (HP: 18/50, DEF: 0)
+[Ronda 8] DDD finaliza su turno de acción.
+[Ronda 9 - aAAA] Moltres (Fuego) desata una llamarada abrasadora sobre Arcanine! Causa 34 pts [Mitigado por escudo: 0, Daño neto a vida: 34]. Arcanine (HP: 0/45, DEF: 0)
+¡Arcanine cayó debilitado! Entra Charizard desde la Cola de Relevos.
+[Ronda 9] aAAA finaliza su turno de acción.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Moltres (Empatía 68)! Sufre daño sísmico: -0 DEF (ruptura de escudo) y -6 HP (daño porcentual).
+¡Terremoto en Charizard (Empatía 62)! Sufre daño sísmico: -12 DEF (ruptura de escudo) y -5 HP (daño porcentual).
+[Ronda 10 - DDD] Charizard (Fuego) desata una llamarada abrasadora sobre Moltres! Causa 57 pts [Mitigado por escudo: 0, Daño neto a vida: 57]. Moltres (HP: 0/50, DEF: 0)
+¡Moltres cayó debilitado! Entra Golem desde la Cola de Relevos.
+[Ronda 10] DDD finaliza su turno de acción.
+[Ronda 11 - aAAA] Golem (Tierra) fortifica su postura y embiste a Charizard! Causa 20 pts [Mitigado por escudo: 8, Daño neto a vida: 12]. Charizard (HP: 23/40, DEF: 0)
+[Ronda 11] aAAA finaliza su turno de acción.
+[Ronda 12 - DDD] Charizard (Fuego) desata una llamarada abrasadora sobre Golem! Causa 57 pts [Mitigado por escudo: 35, Daño neto a vida: 22]. Golem (HP: 28/50, DEF: 0)
+[Ronda 12] DDD finaliza su turno de acción.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Golem (Empatía efectiva 90)! ¡Efecto invertido! Se regenera +11 HP y refuerza coraza +9 DEF.
+¡Terremoto en Charizard (Empatía 62)! Sufre daño sísmico: -0 DEF (ruptura de escudo) y -5 HP (daño porcentual).
+[Ronda 13 - aAAA] Golem (Tierra) fortifica su postura y embiste a Charizard! Causa 20 pts [Mitigado por escudo: 0, Daño neto a vida: 20]. Charizard (HP: 0/40, DEF: 0)
+¡Charizard cayó debilitado! Entra Golem desde la Cola de Relevos.
+[Ronda 13] aAAA finaliza su turno de acción.
+[Ronda 14 - DDD] Golem (Tierra) fortifica su postura y embiste a Golem! Causa 20 pts [Mitigado por escudo: 9, Daño neto a vida: 11]. Golem (HP: 28/50, DEF: 0)
+[Ronda 14] DDD finaliza su turno de acción.
+[Ronda 15 - aAAA] Golem (Tierra) fortifica su postura y embiste a Golem! Causa 20 pts [Mitigado por escudo: 20, Daño neto a vida: 0]. Golem (HP: 50/50, DEF: 15)
+[Ronda 15] aAAA finaliza su turno de acción.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Golem (Empatía efectiva 90)! ¡Efecto invertido! Se regenera +11 HP y refuerza coraza +9 DEF.
+¡Terremoto en Golem (Empatía efectiva 90)! ¡Efecto invertido! Se regenera +11 HP y refuerza coraza +9 DEF.
+[Ronda 16 - DDD] Golem (Tierra) fortifica su postura y embiste a Golem! Causa 20 pts [Mitigado por escudo: 9, Daño neto a vida: 11]. Golem (HP: 28/50, DEF: 0)
+[Ronda 16] DDD finaliza su turno de acción.
+[Ronda 17 - aAAA] Golem (Tierra) fortifica su postura y embiste a Golem! Causa 20 pts [Mitigado por escudo: 20, Daño neto a vida: 0]. Golem (HP: 50/50, DEF: 4)
+[Ronda 17] aAAA finaliza su turno de acción.
+[Ronda 18 - DDD] Golem (Tierra) fortifica su postura y embiste a Golem! Causa 20 pts [Mitigado por escudo: 0, Daño neto a vida: 20]. Golem (HP: 8/50, DEF: 0)
+[Ronda 18] DDD finaliza su turno de acción.
+=== ¡EVENTO AMBIENTAL DEL ESCENARIO: TERREMOTO TECTÓNICO! ===
+¡Terremoto en Golem (Empatía efectiva 90)! ¡Efecto invertido! Se regenera +11 HP y refuerza coraza +9 DEF.
+¡Terremoto en Golem (Empatía efectiva 90)! ¡Efecto invertido! Se regenera +11 HP y refuerza coraza +9 DEF.
+=== COMBATE FINALIZADO POR DECISIÓN DE SALUD ===
+Ganador proclamado: DDD (Salud total de equipo: 108 vs 148)
+======================================================================
+FIN DE LA BITÁCORA DE BATALLA
+======================================================================

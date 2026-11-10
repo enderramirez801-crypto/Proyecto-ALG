@@ -1,0 +1,74 @@
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arcanine.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Agua.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Aire.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Fuego.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Tierra.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Blastoise.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Charizard.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Golem.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Groudon.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Gyarados.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Lugia.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Moltres.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Pidgeot.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Rayquaza.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Tyranitar.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Vaporeon.png
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.exe
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.pdb
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csprojResolveAssemblyReference.cache
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.MainForm.resources
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csproj.GenerateResource.Cache
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.exe
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.pdb
+C:\Users\user\Downloads\Proyectoc#T\SharpDevelop Projects\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.FormGestionMazo.resources
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arcanine.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Agua.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Aire.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Fuego.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Tierra.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Blastoise.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Charizard.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Golem.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Groudon.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Gyarados.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Lugia.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Moltres.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Pidgeot.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Rayquaza.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Tyranitar.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Vaporeon.png
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.exe
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.pdb
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csprojResolveAssemblyReference.cache
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.FormGestionMazo.resources
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.MainForm.resources
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csproj.GenerateResource.Cache
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.exe
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.pdb
+C:\Users\Aaron\Downloads\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.FormLore.resources
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arcanine.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Agua.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Aire.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Fuego.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Arena_Tierra.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Blastoise.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Charizard.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Golem.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Groudon.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Gyarados.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Lugia.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Moltres.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Pidgeot.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Rayquaza.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Tyranitar.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\Imagenes\Vaporeon.png
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.exe
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\bin\Debug\ArenaElemental.pdb
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csprojResolveAssemblyReference.cache
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.FormGestionMazo.resources
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.FormLore.resources
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.MainForm.resources
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.csproj.GenerateResource.Cache
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.exe
+C:\Users\Ender\Desktop\Final\ArenaElemental\ArenaElemental\obj\Debug\ArenaElemental.pdb

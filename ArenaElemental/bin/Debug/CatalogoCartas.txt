@@ -1,0 +1,12 @@
+Blastoise;Agua;50;30;20;2;78
+Gyarados;Agua;55;20;25;2;82
+Vaporeon;Agua;45;30;25;2;70
+Charizard;Fuego;40;20;40;2;62
+Arcanine;Fuego;45;20;35;2;75
+Moltres;Fuego;50;20;30;2;68
+Groudon;Tierra;55;30;15;2;85
+Golem;Tierra;50;35;15;2;80
+Tyranitar;Tierra;55;25;20;2;76
+Rayquaza;Aire;45;25;30;2;74
+Pidgeot;Aire;50;25;25;2;80
+Lugia;Aire;40;25;35;2;66

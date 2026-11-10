@@ -1,0 +1,4 @@
+Estadio Cascada;Agua;Fuego;5
+Volcan Cinnabar;Fuego;Aire;5
+Canon Rocoso;Tierra;Agua;5
+Torre Celeste;Aire;Tierra;5

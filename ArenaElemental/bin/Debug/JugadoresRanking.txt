@@ -1,0 +1,3 @@
+aAAA;4;0;4;Vaporeon,Arcanine,Moltres,Golem,Tyranitar
+DDD;4;4;0;Blastoise,Arcanine,Charizard,Golem,Groudon
+Pablo;1;1;0;Blastoise,Gyarados,Arcanine,Moltres,Tyranitar
