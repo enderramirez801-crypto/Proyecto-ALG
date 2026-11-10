@@ -85,16 +85,26 @@ namespace ArenaElemental
 
         public override string ObtenerArenaNatal()
         {
-            return "Torre Celeste";
+            return Program.IdiomaIngles ? "Sky Tower" : "Torre Celeste";
         }
 
         public override string ObtenerResumenVentajaElemental()
         {
+            if (Program.IdiomaIngles)
+                return "Strong vs Earth (x1.5 dmg) | Weak vs Fire (x0.75 dmg) | Special: Direct piercing HP damage and steals 1 ENER";
             return "Fuerte contra Tierra (x1.5 daño) | Débil contra Fuego (x0.75 daño) | Especial: Daño perforante directo a la vida y roba 1 ENER";
         }
 
         public override string ObtenerLoreFaccion()
         {
+            if (Program.IdiomaIngles)
+            {
+                return "Air Pokémon (Rayquaza, Pidgeot, and Lugia) originate from SKY TOWER, an ancient watchtower " +
+                       "rising above the clouds until brushing the stratosphere. Absolute masters of wind currents and " +
+                       "high-altitude storms, no physical wall can stop their advance: their special skill completely pierces " +
+                       "the opponent's shield dealing direct HP damage and stealing 1 energy point. Thanks to their mastery " +
+                       "of the skies they overcome Earth (x1.5 damage), but are vulnerable to Fire storms (x0.75 damage).";
+            }
             return "Los Pokémon de Aire (Rayquaza, Pidgeot y Lugia) son originarios de la TORRE CELESTE, una ancestral " +
                    "atalaya que se eleva por encima de las nubes hasta rozar la estratósfera. Dueños absolutos de las corrientes " +
                    "de viento y las tormentas de altitud, ningún muro físico puede detener su avance: su habilidad especial " +
@@ -105,6 +115,8 @@ namespace ArenaElemental
 
         public override string EjecutarAccionCombate(Personaje oponente)
         {
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Air) summons a supersonic wind blade against " + oponente.Nombre + "!";
             return this.Nombre + " (Aire) invoca una cuchilla de viento supersónica contra " + oponente.Nombre + "!";
         }
 
@@ -115,6 +127,11 @@ namespace ArenaElemental
             oponente.Vida -= danioDirecto;
             this.CargaEspecial = 0;
 
+            if (Program.IdiomaIngles)
+            {
+                return "Air Special! " + this.Nombre + " executes " + this.NombreHabilidad + " piercing through " +
+                       oponente.Nombre + "'s shield, dealing " + danioDirecto + " direct HP damage and stealing 1 energy.";
+            }
             return "¡Especial de Aire! " + this.Nombre + " ejecuta " + this.NombreHabilidad + " atravesando el escudo de " +
                    oponente.Nombre + ", propinando " + danioDirecto + " HP directos a su vida y robando 1 de energía.";
         }

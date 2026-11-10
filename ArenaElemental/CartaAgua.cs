@@ -85,16 +85,27 @@ namespace ArenaElemental
 
         public override string ObtenerArenaNatal()
         {
-            return "Estadio Cascada";
+            return Program.IdiomaIngles ? "Cascade Stadium" : "Estadio Cascada";
         }
 
         public override string ObtenerResumenVentajaElemental()
         {
+            if (Program.IdiomaIngles)
+                return "Strong vs Fire (x1.5 dmg) | Weak vs Earth (x0.75 dmg) | Defend: +4 HP & Special: drains 1 ENER and heals +12 HP";
             return "Fuerte contra Fuego (x1.5 daño) | Débil contra Tierra (x0.75 daño) | Defensa: +4 HP extra y Especial: drena 1 ENER y cura +12 HP";
         }
 
         public override string ObtenerLoreFaccion()
         {
+            if (Program.IdiomaIngles)
+            {
+                return "Water Pokémon (Blastoise, Gyarados, and Vaporeon) come from CASCADE STADIUM, a natural sanctuary " +
+                       "formed by giant waterfalls, abyssal trenches, and crystal springs. Raised in the ceaseless flow of " +
+                       "the tides, their combat philosophy relies on adaptation and continuous vitality: when defending they " +
+                       "not only raise a liquid shield (+10 DEF) but also restore their own health (+4 HP), and their special " +
+                       "skill drains 1 energy point from the rival while healing +12 HP. On the elemental wheel they effortlessly " +
+                       "extinguish Fire (x1.5 damage), but are held back by Earth walls (x0.75 damage).";
+            }
             return "Los Pokémon de Agua (Blastoise, Gyarados y Vaporeon) provienen del ESTADIO CASCADA, un santuario natural " +
                    "formado por cataratas gigantes, fosas abisales y manantiales cristalinos. Criados en el flujo incesante de " +
                    "las mareas, su filosofía de combate se basa en la adaptación y la vitalidad continua: al defenderse no solo " +
@@ -105,6 +116,8 @@ namespace ArenaElemental
 
         public override string EjecutarAccionCombate(Personaje oponente)
         {
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Water) launches a pressurized torrent against " + oponente.Nombre + "!";
             return this.Nombre + " (Agua) lanza un torrente presurizado contra " + oponente.Nombre + "!";
         }
 
@@ -113,6 +126,8 @@ namespace ArenaElemental
             // Pasiva defensiva de Agua: regenera salud biológica al condensar el escudo
             this.Defensa += 10;
             this.Vida += 4;
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Water) creates a water barrier (+10 DEF and +4 HP regenerated).";
             return this.Nombre + " (Agua) crea una barrera de agua (+10 DEF y +4 HP regenerados).";
         }
 
@@ -124,6 +139,11 @@ namespace ArenaElemental
             this.Vida += 12; // Regeneración biológica del usuario
             this.CargaEspecial = 0;
 
+            if (Program.IdiomaIngles)
+            {
+                return "Water Special! " + this.Nombre + " unleashes " + this.NombreHabilidad + " against " + oponente.Nombre +
+                       " (" + danio + " pts: " + res.DanioMitigadoPorEscudo + " mitigated, " + res.DanioDirectoVida + " to HP), regenerates +12 HP and drains 1 energy.";
+            }
             return "¡Especial de Agua! " + this.Nombre + " desata " + this.NombreHabilidad + " contra " + oponente.Nombre +
                    " (" + danio + " pts: " + res.DanioMitigadoPorEscudo + " mitigados, " + res.DanioDirectoVida + " a vida), se regenera +12 HP y drena 1 de energía.";
         }

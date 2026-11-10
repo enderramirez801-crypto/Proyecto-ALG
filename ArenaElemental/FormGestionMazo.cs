@@ -105,11 +105,25 @@ namespace ArenaElemental
             cboModoMenu.SelectedIndex = modoPrev;
 
             lblEst.Text = en
-                ? "Historical Statistics (Matches, Wins, Losses & Win Rate %):"
+                ? "Historical Statistics (Matches, Wins, Losses and Win Rate %):"
                 : "Estadísticas Históricas (Partidas, Victorias, Derrotas y % de Éxito):";
             btnIniciarCombate.Text = en ? "START BATTLE!" : "¡INICIAR COMBATE!";
 
             ActualizarIndicadorBD();
+
+            int esc1Idx = cboEscenario1.SelectedIndex >= 0 ? cboEscenario1.SelectedIndex : 0;
+            int esc2Idx = cboEscenario2.SelectedIndex >= 0 ? cboEscenario2.SelectedIndex : 1;
+            cboEscenario1.Items.Clear();
+            cboEscenario2.Items.Clear();
+            foreach (Escenario esc in escenarios)
+            {
+                cboEscenario1.Items.Add(esc.ToString());
+                cboEscenario2.Items.Add(esc.ToString());
+            }
+            if (cboEscenario1.Items.Count > esc1Idx) cboEscenario1.SelectedIndex = esc1Idx;
+            if (cboEscenario2.Items.Count > esc2Idx) cboEscenario2.SelectedIndex = esc2Idx;
+            ActualizarFotoArena1();
+            ActualizarFotoArena2();
 
             int catIdx = lstCatalogo.SelectedIndex >= 0 ? lstCatalogo.SelectedIndex : 0;
             lstCatalogo.Items.Clear();
@@ -524,6 +538,7 @@ namespace ArenaElemental
 
             FormLore ventanaLore = new FormLore(this.catalogo, this.escenarios, this.gestorArchivo, seleccionado);
             ventanaLore.ShowDialog();
+            AplicarIdioma();
         }
     }
 }

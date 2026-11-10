@@ -144,7 +144,7 @@ namespace ArenaElemental
                 {
                     g.FillRectangle(brTag, 8, 92, 48, 15);
                 }
-                g.DrawString(p.Elemento.ToUpper(), fElem, Brushes.White, 11, 93);
+                g.DrawString(Program.TraducirElemento(p.Elemento).ToUpper(), fElem, Brushes.White, 11, 93);
 
                 // Estadísticas en la parte inferior de la carta
                 int hpMostrar = mostrarVidaActual ? p.Vida : p.VidaMaxima;
@@ -180,6 +180,20 @@ namespace ArenaElemental
                         using (Image imgArena = Image.FromFile(ruta))
                         {
                             g.DrawImage(imgArena, 0, 0, ancho, alto);
+                        }
+                        if (esc != null)
+                        {
+                            using (SolidBrush brTop = new SolidBrush(Color.FromArgb(220, 28, 30, 36)))
+                            {
+                                g.FillRectangle(brTop, 0, 0, ancho, 22);
+                            }
+                            Font fTitulo = new Font("Segoe UI", 10.5f, FontStyle.Bold, GraphicsUnit.Pixel);
+                            Font fSub = new Font("Segoe UI", 9.5f, FontStyle.Bold, GraphicsUnit.Pixel);
+                            string nomArena = Program.TraducirArena(esc.Nombre);
+                            string infoElem = "+" + Program.TraducirElemento(esc.ElementoFavorecido) +
+                                              " / -" + Program.TraducirElemento(esc.ElementoPenalizado);
+                            g.DrawString(nomArena, fTitulo, Brushes.White, 6, 3);
+                            g.DrawString(infoElem, fSub, Brushes.Khaki, Math.Max(110, ancho - 105), 4);
                         }
                         g.DrawRectangle(Pens.Black, 0, 0, ancho - 1, alto - 1);
                         return bmp;

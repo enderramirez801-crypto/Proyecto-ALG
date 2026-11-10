@@ -87,16 +87,28 @@ namespace ArenaElemental
 
         public override string ObtenerArenaNatal()
         {
-            return "Canon Rocoso";
+            return Program.IdiomaIngles ? "Rocky Canyon" : "Canon Rocoso";
         }
 
         public override string ObtenerResumenVentajaElemental()
         {
+            if (Program.IdiomaIngles)
+                return "Strong vs Water (x1.5 dmg) | Weak vs Air (x0.75 dmg) | Earthquake: +10 Empathy and +15 DEF Rock Wall";
             return "Fuerte contra Agua (x1.5 daño) | Débil contra Aire (x0.75 daño) | Bono Terremoto: +10 Empatía y muro de +15 DEF al defenderse";
         }
 
         public override string ObtenerLoreFaccion()
         {
+            if (Program.IdiomaIngles)
+            {
+                return "Earth Pokémon (Groudon, Golem, and Tyranitar) originate from the imposing ROCKY CANYON, " +
+                       "a region of ancient mountain ranges, tectonic faults, and mineral caverns where geological pressure " +
+                       "forged their armored bodies. Unlike other factions, Earth dwellers live in perfect harmony with " +
+                       "seismic plates: they receive a natural +10 Empathy bonus during Earthquake events, allowing them to " +
+                       "always exceed the 75 Empathy threshold and reverse cataclysms into healing (+8 HP and +8 DEF). " +
+                       "In battle they dominate Water (x1.5 damage) by containing its currents with rock dams, but suffer " +
+                       "against Air attacks (x0.75 damage) that erode the peaks from the sky.";
+            }
             return "Los Pokémon de Tierra (Groudon, Golem y Tyranitar) son originarios del imponente CAÑÓN ROCOSO, " +
                    "una región de cordilleras milenarias, fallas tectónicas y cavernas minerales donde la presión geológica " +
                    "forjó sus cuerpos acorazados. A diferencia de otras facciones, los habitantes de Tierra viven en perfecta " +
@@ -108,6 +120,8 @@ namespace ArenaElemental
 
         public override string EjecutarAccionCombate(Personaje oponente)
         {
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Earth) fortifies its stance and charges at " + oponente.Nombre + "!";
             return this.Nombre + " (Tierra) fortifica su postura y embiste a " + oponente.Nombre + "!";
         }
 
@@ -115,6 +129,8 @@ namespace ArenaElemental
         {
             // Pasiva defensiva de Tierra: levantamiento de muralla pétrea superior (+15 DEF)
             this.Defensa += 15;
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Earth) raises a Granite Wall (+15 DEF, Current Shield: " + this.Defensa + ").";
             return this.Nombre + " (Tierra) levanta un Muro de Granito (+15 DEF, Escudo actual: " + this.Defensa + ").";
         }
 
@@ -129,6 +145,12 @@ namespace ArenaElemental
             ResultadoDanio res = oponente.RecibirDanio(danio);
             this.CargaEspecial = 0;
 
+            if (Program.IdiomaIngles)
+            {
+                return "Earth Special! " + this.Nombre + " activates " + this.NombreHabilidad + " breaking " + escudoRoto +
+                       " DEF from " + oponente.Nombre + ", reinforcing its armor (+12 DEF) and striking for " + danio +
+                       " pts (" + res.DanioMitigadoPorEscudo + " mitigated, " + res.DanioDirectoVida + " to HP).";
+            }
             return "¡Especial de Tierra! " + this.Nombre + " activa " + this.NombreHabilidad + " rompiendo " + escudoRoto +
                    " DEF a " + oponente.Nombre + ", reforzando su coraza (+12 DEF) y golpeando por " + danio +
                    " pts (" + res.DanioMitigadoPorEscudo + " mitigados, " + res.DanioDirectoVida + " a vida).";

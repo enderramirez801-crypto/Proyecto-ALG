@@ -17,6 +17,16 @@ namespace ArenaElemental
             return elem;
         }
 
+        public static string TraducirArena(string nombre)
+        {
+            if (!IdiomaIngles) return nombre;
+            if (nombre == "Estadio Cascada") return "Cascade Stadium";
+            if (nombre == "Volcan Cinnabar" || nombre == "Volcán Cinnabar") return "Cinnabar Volcano";
+            if (nombre == "Canon Rocoso" || nombre == "Cañón Rocoso") return "Rocky Canyon";
+            if (nombre == "Torre Celeste") return "Sky Tower";
+            return nombre;
+        }
+
         [STAThread]
         private static void Main(string[] args)
         {

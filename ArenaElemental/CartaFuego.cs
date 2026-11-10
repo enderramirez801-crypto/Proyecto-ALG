@@ -85,16 +85,27 @@ namespace ArenaElemental
 
         public override string ObtenerArenaNatal()
         {
-            return "Volcan Cinnabar";
+            return Program.IdiomaIngles ? "Cinnabar Volcano" : "Volcan Cinnabar";
         }
 
         public override string ObtenerResumenVentajaElemental()
         {
+            if (Program.IdiomaIngles)
+                return "Strong vs Air (x1.5 dmg) | Weak vs Water (x0.75 dmg) | Passive: +4 continuous burn damage";
             return "Fuerte contra Aire (x1.5 daño) | Débil contra Agua (x0.75 daño) | Pasiva: +4 daño por quemadura continua";
         }
 
         public override string ObtenerLoreFaccion()
         {
+            if (Program.IdiomaIngles)
+            {
+                return "Fire Pokémon (Charizard, Arcanine, and Moltres) originate from CINNABAR VOLCANO (Cinnabar Island), " +
+                       "an island forged by ancient eruptions, rivers of magma, and blazing geysers. Fueled by the heat of " +
+                       "the volcanic core, they are the most offensive faction in the Elemental Arena: all their basic attacks " +
+                       "apply a passive +4 bonus burn damage, and their special skill adds +8 direct burn damage to rival HP " +
+                       "ignoring shields. Their flames consume Air currents (x1.5 damage), but lose intensity against the " +
+                       "extinguishing power of Water (x0.75 damage).";
+            }
             return "Los Pokémon de Fuego (Charizard, Arcanine y Moltres) tienen su origen en el VOLCÁN CINNABAR (Isla Canela), " +
                    "una isla forjada por erupciones milenarias, ríos de magma y géiseres ardientes. Alimentados por el calor del " +
                    "núcleo volcánico, son la facción más ofensiva de la Arena Elemental: todos sus ataques básicos aplican una " +
@@ -105,6 +116,8 @@ namespace ArenaElemental
 
         public override string EjecutarAccionCombate(Personaje oponente)
         {
+            if (Program.IdiomaIngles)
+                return this.Nombre + " (Fire) unleashes a scorching blaze upon " + oponente.Nombre + "!";
             return this.Nombre + " (Fuego) desata una llamarada abrasadora sobre " + oponente.Nombre + "!";
         }
 
@@ -116,6 +129,11 @@ namespace ArenaElemental
             oponente.Vida -= 8; // Quemadura térmica directa a los puntos de vida
             this.CargaEspecial = 0;
 
+            if (Program.IdiomaIngles)
+            {
+                return "Fire Special! " + this.Nombre + " launches " + this.NombreHabilidad + " at " + oponente.Nombre +
+                       " dealing " + danio + " pts (" + res.DanioMitigadoPorEscudo + " mitigated, " + res.DanioDirectoVida + " to HP) and +8 direct burn damage to HP.";
+            }
             return "¡Especial de Fuego! " + this.Nombre + " lanza " + this.NombreHabilidad + " a " + oponente.Nombre +
                    " causando " + danio + " pts (" + res.DanioMitigadoPorEscudo + " mitigados, " + res.DanioDirectoVida + " a vida) y +8 de quemadura directa a su vida.";
         }

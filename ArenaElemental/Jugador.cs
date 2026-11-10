@@ -137,7 +137,9 @@ namespace ArenaElemental
             Personaje proximo = VerSiguienteEnCola();
             if (proximo == null)
             {
-                return "No quedan personajes en la banca de relevos.";
+                return Program.IdiomaIngles
+                    ? "No characters left on the bench."
+                    : "No quedan personajes en la banca de relevos.";
             }
 
             Personaje anterior = personajeActivo;
@@ -148,7 +150,11 @@ namespace ArenaElemental
                 colaRelevos.Enqueue(anterior);
             }
 
-            string nomAnterior = (anterior != null) ? anterior.Nombre : "Banca";
+            string nomAnterior = (anterior != null) ? anterior.Nombre : (Program.IdiomaIngles ? "Bench" : "Banca");
+            if (Program.IdiomaIngles)
+            {
+                return nombre + " swaps out " + nomAnterior + " and sends " + personajeActivo.Nombre + " into the battlefield.";
+            }
             return nombre + " releva a " + nomAnterior + " y entra " + personajeActivo.Nombre + " al campo de batalla.";
         }
 

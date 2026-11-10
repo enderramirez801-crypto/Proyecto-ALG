@@ -155,7 +155,7 @@ namespace ArenaElemental
                 ? "Pokémon Bench (Queue):"
                 : "Banca de Relevos Pokémon (Cola / Queue):";
 
-            grpAcciones.Text = en ? "Active Arena & Actions" : "Arena Activa y Acciones";
+            grpAcciones.Text = en ? "Active Arena and Actions" : "Arena Activa y Acciones";
             btnAtacar.Text = en ? "Attack (1 ENER)" : "Atacar (1 ENER)";
             btnDefender.Text = en ? "Defend (1 ENER)" : "Defender (1 ENER)";
             btnEspecial.Text = en ? "Special Skill (2 ENER)" : "Hab. Especial (2 ENER)";

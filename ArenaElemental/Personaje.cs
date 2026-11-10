@@ -132,26 +132,142 @@ namespace ArenaElemental
 
         public string Descripcion
         {
-            get { return descripcion; }
+            get { return Program.IdiomaIngles ? ObtenerDescripcionIngles() : descripcion; }
             set { descripcion = value; }
         }
 
         public string RegionOrigen
         {
-            get { return regionOrigen; }
+            get { return Program.IdiomaIngles ? ObtenerRegionIngles() : regionOrigen; }
             set { regionOrigen = value; }
         }
 
         public string NombreHabilidad
         {
-            get { return nombreHabilidad; }
+            get { return Program.IdiomaIngles ? ObtenerHabilidadIngles() : nombreHabilidad; }
             set { nombreHabilidad = value; }
         }
 
         public string Lore
         {
-            get { return lore; }
+            get { return Program.IdiomaIngles ? ObtenerLoreIngles() : lore; }
             set { lore = value; }
+        }
+
+        private string ObtenerRegionIngles()
+        {
+            if (nombre == "Groudon") return "Tectonic Abysses of Rocky Canyon (Hoenn Region)";
+            if (nombre == "Golem") return "Granite Peaks of Rocky Canyon (Mt. Moon / Kanto)";
+            if (nombre == "Tyranitar") return "Armored Mountain Range of Rocky Canyon (Mt. Silver / Johto)";
+            if (nombre == "Blastoise") return "Springs and Coasts of Cascade Stadium (Cerulean City / Kanto)";
+            if (nombre == "Gyarados") return "Abyssal Trenches of Cascade Stadium (Lake of Rage / Kanto-Johto)";
+            if (nombre == "Vaporeon") return "Crystal Bays of Cascade Stadium (Kanto)";
+            if (nombre == "Charizard") return "Main Crater of Cinnabar Volcano (Charicific Valley / Cinnabar Island)";
+            if (nombre == "Arcanine") return "Geothermal Plains of Cinnabar Volcano (Kanto)";
+            if (nombre == "Moltres") return "Sacred Caldera of Cinnabar Volcano (Mt. Ember / Sevii Islands)";
+            if (nombre == "Rayquaza") return "Stratospheric Peak of Sky Tower (Ozone Layer / Hoenn)";
+            if (nombre == "Pidgeot") return "High-Altitude Currents of Sky Tower (Viridian Forest / Kanto)";
+            if (nombre == "Lugia") return "Storm Sanctuary of Sky Tower (Whirl Islands / Johto)";
+            return "Elemental Territory of " + Program.TraducirElemento(elemento);
+        }
+
+        private string ObtenerHabilidadIngles()
+        {
+            if (nombre == "Groudon") return "Precipice Blades";
+            if (nombre == "Golem") return "Stone Edge";
+            if (nombre == "Tyranitar") return "Seismic Rock Slide";
+            if (nombre == "Blastoise") return "Draining Hydro Pump";
+            if (nombre == "Gyarados") return "Healing Aqua Tail";
+            if (nombre == "Vaporeon") return "Acid Armor Tide";
+            if (nombre == "Charizard") return "Blast Burn";
+            if (nombre == "Arcanine") return "Flare Blitz";
+            if (nombre == "Moltres") return "Solar Fire Blast";
+            if (nombre == "Rayquaza") return "Dragon Ascent";
+            if (nombre == "Pidgeot") return "Sky Hurricane";
+            if (nombre == "Lugia") return "Aeroblast";
+            return "Special Skill of " + Program.TraducirElemento(elemento);
+        }
+
+        private string ObtenerDescripcionIngles()
+        {
+            if (nombre == "Groudon") return "Continental titan that reverses earthquakes into healing.";
+            if (nombre == "Golem") return "Pure rock shell with the highest defense in the arena.";
+            if (nombre == "Tyranitar") return "Armored colossus capable of shattering mountains and rival shields.";
+            if (nombre == "Blastoise") return "Water Pokémon with hydraulic cannons that restores HP and drains energy.";
+            if (nombre == "Gyarados") return "Sea colossus of immense vitality and elemental empathy.";
+            if (nombre == "Vaporeon") return "Aquatic evolution that merges with water to endure and counterattack.";
+            if (nombre == "Charizard") return "Fire dragon whose flames melt any rock or shield.";
+            if (nombre == "Arcanine") return "Swift legendary Pokémon with a high-impact blazing attack.";
+            if (nombre == "Moltres") return "Legendary fire bird that inflicts direct burn damage.";
+            if (nombre == "Rayquaza") return "Sky guardian whose attacks pierce right through the rival shield.";
+            if (nombre == "Pidgeot") return "Wind master that steals energy with supersonic gusts.";
+            if (nombre == "Lugia") return "Guardian of storms with a devastating aerial strike.";
+            return "Elemental fighter of " + Program.TraducirElemento(elemento);
+        }
+
+        private string ObtenerLoreIngles()
+        {
+            if (nombre == "Groudon")
+                return "Originating from the deepest magma chambers and tectonic faults beneath Rocky Canyon. " +
+                       "According to Elemental Arena legends, Groudon emerged in ancient times to raise the continents " +
+                       "and evaporate the seas with its geothermal heat. Its heavy continental rock armor and high Empathy " +
+                       "(85 EMP, rising to 95 in Earthquakes) make the earth itself recognize it as its lord, transforming " +
+                       "any arena tremor into vital energy (+8 HP and +8 DEF).";
+            if (nombre == "Golem")
+                return "Comes from the steep slopes and mineral craters of upper Rocky Canyon. Its spherical body is " +
+                       "armored by tectonic rock plates so dense that not even dynamite can crack them, granting it the " +
+                       "highest base Defense in the entire catalog (35 DEF). Once a year it sheds its stone shell in the " +
+                       "canyon caves and rolls down the mountains at extreme speed, creating natural stone trenches to protect its team.";
+            if (nombre == "Tyranitar")
+                return "Born in the heart of the most unforgiving mountain ranges of Rocky Canyon, where it grew feeding " +
+                       "on mineral veins and entire mountains. Its armored hide is immune to almost any ordinary impact, " +
+                       "and its territorial temper triggers landslides that force mapmakers to redraw the region. In the " +
+                       "Elemental Arena it uses that seismic power to shatter the opponent's shield (-10 DEF) while reinforcing its own rock wall.";
+            if (nombre == "Blastoise")
+                return "Originating from the sacred reefs and waterfalls of Cascade Stadium. Its heavy blue shell houses " +
+                       "two hydrodynamic cannons capable of firing pressurized water jets with such precision that they pierce " +
+                       "steel plates from over fifty meters away. To withstand the recoil, Blastoise firmly anchors its feet " +
+                       "into the riverbed, giving it high Empathy (78 EMP) to resist tremors and heal while draining rival energy.";
+            if (nombre == "Gyarados")
+                return "Born in the deepest and most turbulent currents beneath the waterfalls of Cascade Stadium, after " +
+                       "overcoming the harsh metamorphosis of swimming upstream against the torrent. Ancient scrolls tell that " +
+                       "it emerges when the seas rage, displaying colossal vitality (55 HP) and an instinctive sensitivity to " +
+                       "earth and sea vibrations (82 EMP), allowing it to turn submarine earthquakes into regenerative waves.";
+            if (nombre == "Vaporeon")
+                return "Comes from the crystal lagoons and serene beaches that feed Cascade Stadium. Its cellular structure " +
+                       "evolved to become identical to pure water molecules, allowing it to dissolve into the current to evade " +
+                       "impacts and regenerate health (+4 HP every time it raises its water shield). Its fins vibrate whenever " +
+                       "a storm or a shift in the battle's energy flow approaches.";
+            if (nombre == "Charizard")
+                return "Originating from the volcanic peaks and lava calderas of Cinnabar Volcano. It soars through the skies " +
+                       "in search of powerful opponents, and its inner fire burns at even higher temperatures the tougher the " +
+                       "battles it has fought. It holds the highest base Attack in the entire Elemental Arena (40 ATK), capable " +
+                       "of melting glaciers and shields in a single fiery breath.";
+            if (nombre == "Arcanine")
+                return "Born in the basalt plains surrounding the slopes of Cinnabar Volcano and revered since antiquity in " +
+                       "ancestral carvings. An inexhaustible flame burns within its chest, allowing it to run ten thousand " +
+                       "kilometers in a single day as if flying over the ground. Thanks to its firm bond with volcanic earth, " +
+                       "it is the only Fire faction member to reach 75 Empathy, turning earthquakes into vitality and defense.";
+            if (nombre == "Moltres")
+                return "Legendary elemental bird dwelling in the living magma heart of Cinnabar Volcano. When wounded in battle, " +
+                       "it plunges directly into the molten lava crater to regenerate its body and rise anew from glowing ashes. " +
+                       "Every beat of its solar wings releases a shower of embers that lights up the night and consumes rivals with direct burns.";
+            if (nombre == "Rayquaza")
+                return "Originating from the ozone layer crowning the mythical Sky Tower, where it has lived for millions of " +
+                       "years without touching solid ground, feeding on atmospheric vapor and meteorite particles. According to " +
+                       "ancient chronicles, when continental and marine titans unleash cataclysms, Rayquaza descends from the sky " +
+                       "like an emerald lightning bolt, piercing any defensive shield with supersonic speed.";
+            if (nombre == "Pidgeot")
+                return "Comes from the windy lookouts and elevated forests surrounding Sky Tower. It spreads its majestic wings " +
+                       "to catch thermal currents and reach Mach 2 speeds, spotting any movement from over a thousand meters high. " +
+                       "Its strong harmony with nature (80 EMP) allows it to anticipate ground earthquakes and channel them in its " +
+                       "favor while its gales strip energy from the enemy.";
+            if (nombre == "Lugia")
+                return "Known as the guardian of the stormy skies connecting the clouds of Sky Tower with the deep oceans. " +
+                       "The aerodynamic power of its wings is so overwhelming that a single wingbeat can tear down cliffs and " +
+                       "unleash forty-day hurricanes. In the Elemental Arena it focuses that atmospheric pressure into a pure air " +
+                       "projectile (35 ATK) that completely ignores rival armor.";
+            return "Elemental creature belonging to the " + Program.TraducirElemento(elemento) + " faction.";
         }
 
         // 3. Constructores Parametrizados de la Clase Padre (evitan duplicación en clases hijas)
@@ -244,6 +360,8 @@ namespace ArenaElemental
 
         public virtual string EjecutarAccionCombate(Personaje oponente)
         {
+            if (Program.IdiomaIngles)
+                return this.nombre + " performs an attack against " + oponente.Nombre + "!";
             return this.nombre + " realiza un ataque contra " + oponente.Nombre + "!";
         }
 
@@ -251,6 +369,8 @@ namespace ArenaElemental
         public virtual string Defender()
         {
             this.Defensa += 10;
+            if (Program.IdiomaIngles)
+                return this.nombre + " defends and raises shield to " + this.defensa + " DEF.";
             return this.nombre + " se defiende y sube su escudo a " + this.defensa + " DEF.";
         }
 

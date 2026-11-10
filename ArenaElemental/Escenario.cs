@@ -44,8 +44,35 @@ namespace ArenaElemental
 
         public string DescripcionLore
         {
-            get { return descripcionLore; }
+            get { return Program.IdiomaIngles ? ObtenerDescripcionLoreIngles() : descripcionLore; }
             set { descripcionLore = value; }
+        }
+
+        private string ObtenerDescripcionLoreIngles()
+        {
+            if (this.elementoFavorecido == "Tierra")
+            {
+                return "Rocky Canyon: Ancestral homeland of Earth Pokémon (Groudon, Golem, and Tyranitar). " +
+                       "Its granite walls and tectonic faults boost Earth attacks (+5 ATK) and absorb " +
+                       "the strength of Water Pokémon (-5 ATK).";
+            }
+            if (this.elementoFavorecido == "Agua")
+            {
+                return "Cascade Stadium: Aquatic sanctuary where Water Pokémon originate (Blastoise, Gyarados, and Vaporeon). " +
+                       "Its crystal torrents boost the Water faction (+5 ATK) and douse Fire flames (-5 ATK).";
+            }
+            if (this.elementoFavorecido == "Fuego")
+            {
+                return "Cinnabar Volcano: Native magmatic caldera of Fire Pokémon (Charizard, Arcanine, and Moltres). " +
+                       "The extreme crater heat boosts Fire attacks (+5 ATK) and thins out Air currents (-5 ATK).";
+            }
+            if (this.elementoFavorecido == "Aire")
+            {
+                return "Sky Tower: Watchtower above the clouds inhabited by Air Pokémon (Rayquaza, Pidgeot, and Lugia). " +
+                       "Stratospheric winds propel the Air faction (+5 ATK) and destabilize Earth colossi (-5 ATK).";
+            }
+            return "Elemental Arena that boosts " + Program.TraducirElemento(this.elementoFavorecido) +
+                   " (+5 ATK) and penalizes " + Program.TraducirElemento(this.elementoPenalizado) + ".";
         }
 
         public Escenario(string nombre, string elementoFavorecido, string elementoPenalizado, int bonoAtaque)
@@ -113,6 +140,11 @@ namespace ArenaElemental
                 p.Vida += curacion;
                 p.Defensa += escudoExtra;
 
+                if (Program.IdiomaIngles)
+                {
+                    return "Earthquake on " + p.Nombre + " (Effective Empathy " + empatiaEfectiva + ")! " +
+                           "Effect reversed! Regenerates +" + curacion + " HP and reinforces shield +" + escudoExtra + " DEF.";
+                }
                 return "¡Terremoto en " + p.Nombre + " (Empatía efectiva " + empatiaEfectiva + ")! " +
                        "¡Efecto invertido! Se regenera +" + curacion + " HP y refuerza coraza +" + escudoExtra + " DEF.";
             }
@@ -125,6 +157,11 @@ namespace ArenaElemental
                 int danioPorcentual = Math.Max(4, (int)Math.Round(p.VidaMaxima * 0.12));
                 p.Vida -= danioPorcentual;
 
+                if (Program.IdiomaIngles)
+                {
+                    return "Earthquake on " + p.Nombre + " (Empathy " + empatiaEfectiva + ")! " +
+                           "Suffers seismic damage: -" + reduccionEscudo + " DEF (shield break) and -" + danioPorcentual + " HP (percentage damage).";
+                }
                 return "¡Terremoto en " + p.Nombre + " (Empatía " + empatiaEfectiva + ")! " +
                        "Sufre daño sísmico: -" + reduccionEscudo + " DEF (ruptura de escudo) y -" + danioPorcentual + " HP (daño porcentual).";
             }
@@ -132,6 +169,12 @@ namespace ArenaElemental
 
         public override string ToString()
         {
+            if (Program.IdiomaIngles)
+            {
+                return Program.TraducirArena(this.nombre) + " (+" +
+                       Program.TraducirElemento(this.elementoFavorecido) + " / -" +
+                       Program.TraducirElemento(this.elementoPenalizado) + ")";
+            }
             return this.nombre + " (+" + this.elementoFavorecido + " / -" + this.elementoPenalizado + ")";
         }
     }

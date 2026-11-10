@@ -64,18 +64,18 @@ namespace ArenaElemental
         {
             bool en = Program.IdiomaIngles;
             this.Text = en
-                ? "Pokémon Elemental Arena - Lore & History Encyclopedia"
+                ? "Pokémon Elemental Arena - Lore and History Encyclopedia"
                 : "Pokémon Arena Elemental - Lore e Historia de los Pokémon";
             lblTitulo.Text = en
-                ? "POKÉMON ELEMENTAL ARENA - LORE & ORIGIN ENCYCLOPEDIA"
+                ? "POKÉMON ELEMENTAL ARENA - LORE AND ORIGIN ENCYCLOPEDIA"
                 : "POKÉMON ARENA ELEMENTAL - ENCICLOPEDIA DE LORE Y ORIGEN";
             lblSub.Text = en
-                ? "Discover the origin of Earth, Water, Fire & Air Pokémon and the history of all 12 fighters"
+                ? "Discover the origin of Earth, Water, Fire and Air Pokémon and the history of all 12 fighters"
                 : "Descubre de dónde son los Pokémon de Tierra, Agua, Fuego y Aire y la historia de los 12 luchadores";
             btnIdiomaLore.Text = en ? "🌐 Lang: EN" : "🌐 Idioma: ES";
             btnCerrarLore.Text = en ? "Close Lore" : "Cerrar Lore";
 
-            grpFacciones.Text = en ? "1. Factions & Pokémon (12)" : "1. Facciones y Pokémon (12)";
+            grpFacciones.Text = en ? "1. Factions and Pokémon (12)" : "1. Facciones y Pokémon (12)";
             lblFil.Text = en ? "Filter by Region / Element:" : "Filtrar por Región / Elemento:";
             btnFiltroTodos.Text = en ? "All Pokémon (12)" : "Todos los Pokémon (12)";
             btnFiltroTierra.Text = en ? "Earth — Rocky Canyon (3)" : "Tierra — Cañón Rocoso (3)";
@@ -83,7 +83,7 @@ namespace ArenaElemental
             btnFiltroFuego.Text = en ? "Fire — Cinnabar Volcano (3)" : "Fuego — Volcán Cinnabar (3)";
             btnFiltroAire.Text = en ? "Air — Sky Tower (3)" : "Aire — Torre Celeste (3)";
             lblListaPok.Text = en ? "Select a Pokémon from Catalog:" : "Selecciona un Pokémon del Catálogo:";
-            lblHistInd.Text = en ? "Individual Pokémon Biography & Lore:" : "Biografía y Lore Individual del Pokémon:";
+            lblHistInd.Text = en ? "Individual Pokémon Biography and Lore:" : "Biografía y Lore Individual del Pokémon:";
         }
 
         private void AplicarFiltro(string elementoFiltro, Personaje seleccionar)
@@ -166,28 +166,29 @@ namespace ArenaElemental
             if (escNatal != null)
             {
                 lblArenaNatal.Text = en
-                    ? "Homeland / Native Arena: " + escNatal.ToString() + " (+" + escNatal.BonoAtaque + " ATK Bonus to " + elemTrad + ")"
-                    : "Territorio / Arena Natal: " + escNatal.ToString() + " (Bono +" + escNatal.BonoAtaque + " ATK a " + p.Elemento + ")";
+                    ? "Native Arena: " + escNatal.ToString() + " (+" + escNatal.BonoAtaque + " ATK)"
+                    : "Arena Natal: " + escNatal.ToString() + " (Bono +" + escNatal.BonoAtaque + " ATK)";
                 picArenaNatal.Image = gestorArchivo.ObtenerImagenArena(escNatal, 250, 115);
             }
             else
             {
-                lblArenaNatal.Text = (en ? "Homeland / Native Arena: " : "Territorio / Arena Natal: ") + p.ObtenerArenaNatal();
+                lblArenaNatal.Text = (en ? "Native Arena: " : "Territorio / Arena Natal: ") + p.ObtenerArenaNatal();
                 picArenaNatal.Image = null;
             }
 
             grpOrigenFaccion.Text = en
-                ? "2. Where are " + elemTrad + " Pokémon from? (Faction Origin & Lore)"
+                ? "2. Where are " + elemTrad + " Pokémon from? (Faction Origin and Lore)"
                 : "2. ¿De dónde son los Pokémon de " + p.Elemento + "? (Origen y Lore de la Facción)";
             string textoFaccion = p.ObtenerLoreFaccion();
             if (escNatal != null && escNatal.DescripcionLore != null && escNatal.DescripcionLore != "")
             {
-                textoFaccion += "\r\n\r\n[" + (en ? "ELEMENTAL SANCTUARY - " : "SANTUARIO ELEMENTAL - ") + escNatal.Nombre.ToUpper() + "]: " + escNatal.DescripcionLore;
+                string nomEscMostrar = Program.TraducirArena(escNatal.Nombre).ToUpper();
+                textoFaccion += "\r\n\r\n[" + (en ? "ELEMENTAL SANCTUARY - " : "SANTUARIO ELEMENTAL - ") + nomEscMostrar + "]: " + escNatal.DescripcionLore;
             }
             txtLoreFaccion.Text = textoFaccion;
 
             grpDetallePokemon.Text = en
-                ? "3. History, Origin & Attributes of " + p.Nombre + " (" + elemTrad + ")"
+                ? "3. History, Origin and Attributes of " + p.Nombre + " (" + elemTrad + ")"
                 : "3. Historia, Origen y Atributos de " + p.Nombre + " (" + p.Elemento + ")";
             lblNombreElem.Text = en
                 ? p.Nombre.ToUpper() + "  —  " + elemTrad + " Elemental Faction"
@@ -195,32 +196,32 @@ namespace ArenaElemental
             lblRegionOrigen.Text = (en ? "Origin Region: " : "Región de Origen: ") + p.RegionOrigen;
             lblHabilidadLore.Text = (en ? "Special Skill: " : "Habilidad Especial: ") + p.NombreHabilidad + " (" + p.Descripcion + ")";
             lblStatsLore.Text = en
-                ? "Base Stats (Balance = 100 pts):   HP: " + p.VidaMaxima +
-                  "   |   Shield (DEF): " + p.Defensa +
-                  "   |   Attack (ATK): " + p.Ataque +
-                  "   |   Empathy: " + p.Empatia
-                : "Estadísticas Base (Balance = 100 pts):   HP: " + p.VidaMaxima +
-                  "   |   Escudo (DEF): " + p.Defensa +
-                  "   |   Ataque (ATK): " + p.Ataque +
-                  "   |   Empatía: " + p.Empatia;
+                ? "Base Stats (Sum=100):  HP: " + p.VidaMaxima +
+                  "  |  DEF: " + p.Defensa +
+                  "  |  ATK: " + p.Ataque +
+                  "  |  Empathy: " + p.Empatia
+                : "Estadísticas Base (Suma=100):  HP: " + p.VidaMaxima +
+                  "  |  DEF: " + p.Defensa +
+                  "  |  ATK: " + p.Ataque +
+                  "  |  Empatía: " + p.Empatia;
 
             int empTerremoto = (p.Elemento == "Tierra") ? (p.Empatia + 10) : p.Empatia;
             if (empTerremoto >= 75)
             {
                 lblTerremotoLore.Text = en
-                    ? "Seismic Bond (Earthquake): Effective Empathy " + empTerremoto + " (>= 75) -> Reverses earthquake and heals +8 HP & +8 DEF!"
-                    : "Vínculo Sísmico (Terremoto): Empatía Efectiva " + empTerremoto + " (>= 75) -> ¡Invierte el terremoto y se cura +8 HP y +8 DEF!";
+                    ? "Seismic Bond: Empathy " + empTerremoto + " (>= 75) -> Reverses earthquake (+8 HP and +8 DEF)!"
+                    : "Vínculo Sísmico: Empatía " + empTerremoto + " (>= 75) -> ¡Invierte el terremoto (+8 HP y +8 DEF)!";
                 lblTerremotoLore.ForeColor = Color.DarkGreen;
             }
             else
             {
                 lblTerremotoLore.Text = en
-                    ? "Seismic Bond (Earthquake): Effective Empathy " + empTerremoto + " (< 75) -> Suffers earthquake damage (-10 DEF & -6 HP)."
-                    : "Vínculo Sísmico (Terremoto): Empatía Efectiva " + empTerremoto + " (< 75) -> Sufre el impacto del terremoto (-10 DEF y -6 HP).";
+                    ? "Seismic Bond: Empathy " + empTerremoto + " (< 75) -> Suffers earthquake damage (-10 DEF, -6 HP)."
+                    : "Vínculo Sísmico: Empatía " + empTerremoto + " (< 75) -> Sufre el terremoto (-10 DEF y -6 HP).";
                 lblTerremotoLore.ForeColor = Color.Firebrick;
             }
 
-            lblVentajaLore.Text = (en ? "Elemental Mechanic: " : "Mecánica Elemental: ") + p.ObtenerResumenVentajaElemental();
+            lblVentajaLore.Text = (en ? "Elemental: " : "Mecánica: ") + p.ObtenerResumenVentajaElemental();
 
             txtLoreIndividual.Text = p.Lore + "\r\n\r\n" +
                                      (en ? "--- BATTLE BEHAVIOR ---\r\n• Attack Action: " : "--- COMPORTAMIENTO EN COMBATE ---\r\n• Acción de Ataque: ") +
